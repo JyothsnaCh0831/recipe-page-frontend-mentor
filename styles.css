@@ -71,7 +71,7 @@ p {
 .container hr {
     color: hsl(30, 18%, 87%);
     border: none;
-    border-top: 1px solid hsla(0, 0%, 0%, 0.5);
+    border-top: 1px solid hsla(0, 0%, 0%, 0.1);
     width: 100%;
 }
 
@@ -119,17 +119,16 @@ p {
 /* Section - 4 */
 .container #section-4 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .container #section-4 table tr {
-    border: none;
-    border-bottom: 1px solid hsl(30, 18%, 87%);
-    width: 100%;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
 
 .container #section-4 table tr td:nth-child(2) p {
     color: hsl(14, 45%, 36%);
-    font-weight: bold;
+    font-family: Outfit-SemiBold;
 }
 
 .container #section-4 table p {
