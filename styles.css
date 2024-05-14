@@ -1,0 +1,172 @@
+/* Fonts */
+@font-face {
+    font-family: YoungSerif;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: Outfit-SemiBold;
+    src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+}
+
+/* Entire body */
+body {
+    background-color: hsl(30, 54%, 90%);
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 1rem;
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+}
+
+/* Main Container */
+.main-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Content Container */
+.container {
+    background-color: hsl(0, 0%, 100%);
+    margin: 15% 0;
+    padding: 5%;
+    border-radius: 1.5rem;
+}
+
+/* Image */
+.container img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* For All Sections */
+.container .section {
+    margin: 2rem 0;
+}
+
+/* For All lists */
+.container .section li {
+    list-style-position: outside;
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit;
+}
+
+.container .section li span {
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit-SemiBold;
+    font-weight: 500;
+}
+
+/* Horizontal Rule */
+.container hr {
+    color: hsl(30, 18%, 87%);
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.5);
+    width: 100%;
+}
+
+
+/* Section - 1 */
+.container #section-1 #heading {
+    color: hsl(24, 5%, 18%);
+    font-family: YoungSerif;
+    font-size: 2.5rem;
+}
+
+.container #section-1 .preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 3.5%;
+    border-radius: 1rem;
+}
+
+.container #section-1 .preparation-time p {
+    color: hsl(332, 51%, 32%);
+    font-size: 1.2rem;
+    font-family: Outfit-SemiBold;
+}
+
+.container #section-1 .preparation-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+/* Section - 2 */
+.container .section .sub-heading {
+    color: hsl(14, 45%, 36%);
+    font-family: YoungSerif;
+    font-size: 1.5rem;
+}
+
+.container #section-2 ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+/* Section - 3 */
+.container #section-3 ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+/* Section - 4 */
+.container #section-4 table {
+    width: 100%;
+}
+
+.container #section-4 table tr {
+    border: none;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    width: 100%;
+}
+
+.container #section-4 table tr td:nth-child(2) p {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.container #section-4 table p {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+
+/* Media Query */
+@media (max-width: 375px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container .section {
+        padding: 0 5%;
+    }
+
+    .container .attribution {
+        margin-bottom: 0;
+    }
+
+    .container hr {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
